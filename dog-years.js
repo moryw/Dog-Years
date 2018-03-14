@@ -16,7 +16,7 @@ laterYears *= 4;
 const myAgeInDogYears = earlyYears + laterYears;
 
 //get users name and make it lowercase
-let myName = Matt
+let myName = 'Matt'
 
 myName.toLowerCase()
 
