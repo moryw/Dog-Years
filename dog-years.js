@@ -14,3 +14,7 @@ laterYears *= 4;
 
 //the sum of earlyYears and laterYears is the users age in dog years
 const myAgeInDogYears = earlyYears + laterYears;
+
+let myName = Matt
+
+myName.toLowerCase()
