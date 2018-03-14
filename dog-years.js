@@ -19,3 +19,5 @@ const myAgeInDogYears = earlyYears + laterYears;
 let myName = Matt
 
 myName.toLowerCase()
+
+console.log(`My name is ${myName}. I am ${myAgeInDogYears} years old in dog years.`);
