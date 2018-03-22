@@ -1,3 +1,5 @@
+
+
 //age of user that will be converted into dog years
 const myAge = 29;
 
@@ -65,10 +67,10 @@ const logYears = () => {
   if ()
 }
 
-
 console.log(`Thanks ${usersName}. You are ${usersAgeInDogYears} years old in dog years.`);
 
-//first try to get the program to stop when user says no
+
+//first try to get the program to stop when user says no, not working
 const usersName = prompt('What is your name?')
 
 const getResponse = prompt(`Hello ${usersName} would you like to know how old you are in Dog Years?`)
@@ -123,6 +125,61 @@ const outcome = () => {
 
 outcome();
 
+//second attempt try to get program to stop, working
+
+//jshint esnext:true
+
+const usersName = prompt('What is your name?');
+
+const getResponse = prompt(`Hello ${usersName} would you like to know how old you are in Dog Years? Yes/No`)
+
+const response = getResponse.toLowerCase();
+
+
+const continueYesNo = userResponse => {
+  if (userResponse == 'yes') {
+    return true;
+  } else {
+    return false;
+  }
+};
+continueYesNo(response);
+
+
+const continueAlert = () => {
+  if (continueYesNo(response) === true) {
+    alert("Let's do this!")
+  } else {
+    alert("Why do you hate dogs and age?!?")
+  }
+};
+continueAlert();
+
+
+const usersAge = () => {
+  if (continueYesNo(response) === true ) {
+    return prompt('How old are you?');
+  } else {
+    return false;
+  }
+};
+
+
+let earlyYears = 2 * 10.5; //the first 2 human years equal 10.5 dog years per year
+
+let laterYears = (usersAge() - 2) * 4; //each human year after the first 2 are equal to 4 dogs years
+
+const usersAgeInDogYears = earlyYears + laterYears; //the sum of earlyYears and laterYears is the users age in dog years
+
+
+const outcome = () => {
+  if (continueYesNo(response) === true ) {
+    alert ('Thanks ' + usersName + '. You are ' + usersAgeInDogYears + ' years old in dog years.')
+  } else {
+    alert ('Thanks ' + usersName + ' for hating life!')
+  }
+};
+outcome();
 
 
 
