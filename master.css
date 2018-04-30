@@ -1,0 +1,56 @@
+html {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+header {
+  height: 4rem;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+}
+
+.logo {
+  color: gold;
+}
+
+.main-content {
+  padding-top: 4rem;
+}
+
+.top-section {
+  display: flex;
+  justify-content: center;
+}
+
+.side {
+  width: 50%;
+  height: 20rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.side h2 {
+  padding-top: 1rem;
+}
+
+#left {
+  background-color: purple;
+}
+
+#right {
+  background-color: teal;
+}
