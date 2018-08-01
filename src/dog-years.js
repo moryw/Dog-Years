@@ -183,6 +183,71 @@
 // };
 // outcome();
 //
+
+const stringJoin = ('string') => {
+  for (var i = 0; i < array.length; i++) {
+    if (true) {
+
+    }
+  }
+  let newString = string.replace('_')
+  return newString
+}
+
+stringJoin("matt_join-John-usa");
+
+
+
+const stringJoin = (string) => {
+  for (var i = 0; i < string.length; i++) {
+    if (string.charAt(i) == "_" || "-") {
+      string.charAt(i + 1).toUpperCase
+    }
+  console.log(string);
+}
+
+const stringJoin = (string) => {
+  for (var i = 0; i < string.length; i++) {
+    if (string.charAt(i) == "_") {
+      string.charAt(i + 1).toUpperCase()
+      console.log(string);
+      return;
+    }
+  }
+}
+
+/*
+For a given input string
+inputString = "matt_join-John-usa"
+output = "mattJoinJohnUsa"
+*/
+
+
+const newString = "";
+const stringJoin = (string) => {
+  for (var i = 0; i < string.length; i++) {
+    if (string.charAt(i) == "_" || string.charAt(i) == "-") {
+      string.charAt(i + 1).toUpperCase();
+      console.log(string);
+    }
+  }
+}
+
+stringJoin("matt_join-John-usa");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //
 //
 //
